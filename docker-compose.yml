@@ -19,7 +19,7 @@ services:
       --port 8000 
       --max-model-len 2048
       --tensor-parallel-size 1 
-      --gpu-memory-utilization 0.2
+      --gpu-memory-utilization 0.8
       --max-num-seqs 8
       --kv-cache-dtype fp8
     deploy:
