@@ -29,7 +29,6 @@
 
 vLLM을 실행할 Docker 이미지를 빌드합니다. `Dockerfile`이 있는 경로에서 아래 명령어를 실행하세요.
 
-**Bash**
 
 ```
 docker build -t vllm-env .
@@ -39,7 +38,6 @@ docker build -t vllm-env .
 
 `docker-compose.yml` 파일이 있는 경로에서 아래 명령어를 실행하여 vLLM API 서버와 Open WebUI를 동시에 실행합니다. `-d` 옵션은 백그라운드에서 실행하도록 합니다.
 
-**Bash**
 
 ```
 docker-compose up -d
@@ -70,7 +68,6 @@ docker-compose up -d
 
 **예시 (GPU 메모리 90% 사용, 텐서 병렬화 1로 설정):**
 
-**YAML**
 
 ```
     command: >
@@ -108,7 +105,6 @@ docker-compose up -d
 | `USE_CUDA_DOCKER`     | Docker 내 GPU 사용 설정            |
 | `WEBUI_SECRET_KEY`    | 인증 키 (간단히 EMPTY로 설정 가능) |
 
-- ](https://docs.vllm.ai/en/latest/serving/openai.html)
 
 ---
 
